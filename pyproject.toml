@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "whyte"
+version = "0.0.1"
+description = "Margin Cropping Tool"
+authors = ["Shunta Komatsu <shuntak217@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.18.1"
+opencv-python = "^4.1.2"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+flake8 = "^3.7.9"
+isort = "^4.3.21"
+mypy = "^0.761"
+pylint = "^2.4.4"
+pytest = "^5.3.2"
+
+[tool.poetry.scripts]
+whyte = "whyte.cli:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
